@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inventario</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+<h2>BYA POS</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="pos.html">Caja POS</a>
+<a href="inventory.html">Inventario</a>
+</div>
+
+<div class="main">
+
+<h1>Inventario</h1>
+
+<div class="card">
+
+<input type="text" id="name" class="input" placeholder="Producto">
+
+<input type="number" id="price" class="input" placeholder="Precio">
+
+<input type="number" id="stock" class="input" placeholder="Stock">
+
+<button class="btn" onclick="addProduct()">
+Agregar Producto
+</button>
+
+</div>
+
+<table class="table">
+<thead>
+<tr>
+<th>Producto</th>
+<th>Precio</th>
+<th>Stock</th>
+</tr>
+</thead>
+<tbody id="products"></tbody>
+</table>
+
+</div>
+
+<script type="module" src="js/inventory.js"></script>
+
+</body>
+</html>

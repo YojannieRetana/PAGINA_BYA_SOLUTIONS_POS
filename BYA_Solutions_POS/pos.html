@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>POS</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+<h2>BYA POS</h2>
+<a href="dashboard.html">Dashboard</a>
+<a href="pos.html">Caja POS</a>
+<a href="inventory.html">Inventario</a>
+</div>
+
+<div class="main">
+
+<h1>Caja Registradora</h1>
+
+<div class="pos-grid">
+
+<div>
+
+<div class="products-grid" id="products"></div>
+
+</div>
+
+<div class="cart">
+
+<h2>Carrito</h2>
+
+<div id="cart"></div>
+
+<h1 id="total">₡0</h1>
+
+<select id="payment" class="input">
+<option>Efectivo</option>
+<option>Tarjeta</option>
+<option>SINPE</option>
+</select>
+
+<input type="number" id="cash" class="input" placeholder="Con cuánto paga">
+
+<button class="btn" onclick="pay()">
+Pagar
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="js/pos.js"></script>
+
+</body>
+</html>
+
+<footer>
+
+<img src="assets/logo.png" width="80">
+
+<p>
+© 2026 BYA Solutions
+</p>
+
+</footer>
